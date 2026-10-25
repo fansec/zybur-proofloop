@@ -1,0 +1,19 @@
+id: persistence/wmi-subscription-not-enabled
+title: Disabled WMI Subscription Rule Example
+rules:
+- Suspicious WMI Event Subscription Created
+technique: T1546.003
+tactic: persistence
+severity: MEDIUM
+tags:
+- sample
+- disabled-rule
+safety: supervised
+evidence: real_behaviour
+expect: not_enabled
+reason: This example documents a deliberately disabled rule and is excluded from detection scoring.
+executor: caldera_command
+params:
+  platform: windows
+  shell: psh
+  command: Write-Host "Example only - the target rule is not enabled"

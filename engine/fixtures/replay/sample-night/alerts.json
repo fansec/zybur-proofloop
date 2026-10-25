@@ -1,0 +1,233 @@
+[
+  {
+    "@timestamp": "2025-01-15T04:04:42.211Z",
+    "building_block_type": null,
+    "event_dataset": "endpoint.alerts",
+    "event_ingested": "2025-01-15T04:04:25Z",
+    "event_type": [
+      "info",
+      "denied"
+    ],
+    "group_id": null,
+    "group_index": null,
+    "host_id": "h1",
+    "host_name": "ws",
+    "name": "Malicious Behavior Prevention Alert: Credential Access via Known Utilities",
+    "original_time": "2025-01-15T04:04:15.327Z",
+    "rule_id": "22222222-2222-4222-8222-222222222222",
+    "rule_version": 1,
+    "winlog_computer_name": null
+  },
+  {
+    "@timestamp": "2025-01-15T04:04:42.219Z",
+    "building_block_type": null,
+    "event_dataset": "endpoint.alerts",
+    "event_ingested": "2025-01-15T04:04:25Z",
+    "event_type": [
+      "info",
+      "denied"
+    ],
+    "group_id": null,
+    "group_index": null,
+    "host_id": "h1",
+    "host_name": "ws",
+    "name": "Malicious Behavior Prevention Alert: RunDLL32 with Unusual Arguments",
+    "original_time": "2025-01-15T04:04:15.327Z",
+    "rule_id": "22222222-2222-4222-8222-222222222222",
+    "rule_version": 1,
+    "winlog_computer_name": null
+  },
+  {
+    "@timestamp": "2025-01-15T04:04:42.225Z",
+    "building_block_type": null,
+    "event_dataset": "endpoint.alerts",
+    "event_ingested": "2025-01-15T04:04:36Z",
+    "event_type": [
+      "info",
+      "denied"
+    ],
+    "group_id": null,
+    "group_index": null,
+    "host_id": "h1",
+    "host_name": "ws",
+    "name": "Malicious Behavior Prevention Alert: Execution via Renamed Signed Binary Proxy",
+    "original_time": "2025-01-15T04:04:31.643Z",
+    "rule_id": "22222222-2222-4222-8222-222222222222",
+    "rule_version": 1,
+    "winlog_computer_name": null
+  },
+  {
+    "@timestamp": "2025-01-15T04:05:12.760Z",
+    "building_block_type": null,
+    "event_dataset": "endpoint.events.process",
+    "event_ingested": "2025-01-15T04:04:25Z",
+    "event_type": [
+      "start",
+      "end"
+    ],
+    "group_id": null,
+    "group_index": null,
+    "host_id": "h1",
+    "host_name": "ws",
+    "name": "Neighbour Rule 1",
+    "original_time": "2025-01-15T04:04:03.632Z",
+    "rule_id": "neighbour-rule-1",
+    "rule_version": 1,
+    "winlog_computer_name": null
+  },
+  {
+    "@timestamp": "2025-01-15T04:05:12.755Z",
+    "building_block_type": null,
+    "event_dataset": "endpoint.events.process",
+    "event_ingested": "2025-01-15T04:04:25Z",
+    "event_type": [
+      "start",
+      "end"
+    ],
+    "group_id": null,
+    "group_index": null,
+    "host_id": "h1",
+    "host_name": "ws",
+    "name": "Neighbour Rule 1",
+    "original_time": "2025-01-15T04:04:03.622Z",
+    "rule_id": "neighbour-rule-1",
+    "rule_version": 1,
+    "winlog_computer_name": null
+  },
+  {
+    "@timestamp": "2025-01-15T04:07:45.450Z",
+    "building_block_type": null,
+    "event_dataset": "endpoint.events.file",
+    "event_ingested": "2025-01-15T04:05:37Z",
+    "event_type": [
+      "creation"
+    ],
+    "group_id": null,
+    "group_index": null,
+    "host_id": "h1",
+    "host_name": "ws",
+    "name": "Creation or Modification of Domain Backup DPAPI private key",
+    "original_time": "2025-01-15T04:05:03.350Z",
+    "rule_id": "33333333-3333-4333-8333-333333333333",
+    "rule_version": 1,
+    "winlog_computer_name": null
+  },
+  {
+    "@timestamp": "2025-01-15T04:07:39.709Z",
+    "building_block_type": null,
+    "event_dataset": "endpoint.events.process",
+    "event_ingested": "2025-01-15T04:04:25Z",
+    "event_type": [
+      "start",
+      "end"
+    ],
+    "group_id": null,
+    "group_index": null,
+    "host_id": "h1",
+    "host_name": "ws",
+    "name": "Context Rule A",
+    "original_time": "2025-01-15T04:04:15.321Z",
+    "rule_id": "55555555-5555-4555-8555-555555555555",
+    "rule_version": 1,
+    "winlog_computer_name": null
+  },
+  {
+    "@timestamp": "2025-01-15T05:02:30.557Z",
+    "building_block_type": null,
+    "event_dataset": null,
+    "event_ingested": null,
+    "event_type": null,
+    "group_id": null,
+    "group_index": null,
+    "host_id": "h1",
+    "host_name": "ws",
+    "name": "Context Rule B",
+    "original_time": null,
+    "rule_id": "66666666-6666-4666-8666-666666666666",
+    "rule_version": 1,
+    "winlog_computer_name": null
+  },
+  {
+    "@timestamp": "2025-01-15T04:05:42.594Z",
+    "building_block_type": null,
+    "event_dataset": "endpoint.alerts",
+    "event_ingested": "2025-01-15T04:04:54Z",
+    "event_type": [
+      "info",
+      "allowed"
+    ],
+    "group_id": null,
+    "group_index": null,
+    "host_id": "h2",
+    "host_name": "other-host",
+    "name": "Malicious Behavior Detection Alert: Unsigned File Execution via Network Logon",
+    "original_time": "2025-01-15T04:04:49.885Z",
+    "rule_id": "22222222-2222-4222-8222-222222222222",
+    "rule_version": 1,
+    "winlog_computer_name": null
+  },
+  {
+    "@timestamp": "2025-01-15T04:09:21.118Z",
+    "building_block_type": null,
+    "event_dataset": null,
+    "event_ingested": null,
+    "event_type": null,
+    "group_id": null,
+    "group_index": null,
+    "host_id": "h1",
+    "host_name": null,
+    "name": "Context Rule C",
+    "original_time": null,
+    "rule_id": "77777777-7777-4777-8777-777777777777",
+    "rule_version": 1,
+    "winlog_computer_name": null
+  },
+  {
+    "@timestamp": "2025-01-15T04:14:20.630Z",
+    "building_block_type": null,
+    "event_dataset": null,
+    "event_ingested": null,
+    "event_type": null,
+    "group_id": null,
+    "group_index": null,
+    "host_id": "h1",
+    "host_name": null,
+    "name": "Context Rule C",
+    "original_time": null,
+    "rule_id": "77777777-7777-4777-8777-777777777777",
+    "rule_version": 1,
+    "winlog_computer_name": null
+  },
+  {
+    "@timestamp": "2025-01-15T04:33:57.063Z",
+    "building_block_type": null,
+    "event_dataset": null,
+    "event_ingested": null,
+    "event_type": null,
+    "group_id": null,
+    "group_index": null,
+    "host_id": "h1",
+    "host_name": null,
+    "name": "Context Rule D",
+    "original_time": null,
+    "rule_id": "88888888-8888-4888-8888-888888888888",
+    "rule_version": 1,
+    "winlog_computer_name": null
+  },
+  {
+    "@timestamp": "2025-01-15T05:03:55.184Z",
+    "building_block_type": null,
+    "event_dataset": null,
+    "event_ingested": null,
+    "event_type": null,
+    "group_id": null,
+    "group_index": null,
+    "host_id": "h1",
+    "host_name": null,
+    "name": "Context Rule D",
+    "original_time": null,
+    "rule_id": "88888888-8888-4888-8888-888888888888",
+    "rule_version": 1,
+    "winlog_computer_name": null
+  }
+]

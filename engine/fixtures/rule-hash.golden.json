@@ -1,0 +1,67 @@
+[
+  {
+    "case": "kuery-with-filters",
+    "rule": {
+      "name": "Example kuery rule",
+      "version": 3,
+      "tags": [
+        "Noise: Low"
+      ],
+      "type": "query",
+      "language": "kuery",
+      "query": "event.category:process and process.name:\"cmd.exe\"",
+      "index": [
+        "logs-endpoint.events.process-*"
+      ],
+      "filters": [
+        {
+          "meta": {
+            "negate": true,
+            "disabled": false,
+            "key": "host.name"
+          },
+          "query": {
+            "match_phrase": {
+              "host.name": "lab-1"
+            }
+          }
+        }
+      ]
+    },
+    "hash": "7e818c4d5b1b2091"
+  },
+  {
+    "case": "eql-unsorted-index-non-ascii",
+    "rule": {
+      "type": "eql",
+      "language": "eql",
+      "severity": "medium",
+      "query": "process where process.name == \"café.exe\" and process.args : \"über*\"",
+      "index": [
+        "winlogbeat-*",
+        "logs-windows.sysmon_operational-*",
+        "endgame-*"
+      ]
+    },
+    "hash": "835ec46f4903a0a6"
+  },
+  {
+    "case": "new-terms-fields-and-window",
+    "rule": {
+      "rule_id": "example",
+      "type": "new_terms",
+      "language": "kuery",
+      "query": "event.action:\"logon\" and user.name:*",
+      "index": [
+        "logs-system.security-*"
+      ],
+      "new_terms_fields": [
+        "user.name",
+        "source.ip"
+      ],
+      "history_window_start": "now-14d",
+      "filters": []
+    },
+    "hash": "a4545ab5e391b851"
+  }
+]

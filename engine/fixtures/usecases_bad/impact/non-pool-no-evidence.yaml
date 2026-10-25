@@ -1,0 +1,11 @@
+id: impact/non-pool-no-evidence
+title: Supervised use-case missing the evidence field
+rules:
+  - Sample Rule Two
+technique: T1490
+tactic: impact
+safety: supervised
+executor: caldera_command
+params:
+  shell: psh
+  command: 'whoami'

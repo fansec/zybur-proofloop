@@ -1,0 +1,17 @@
+# A registry that is genuinely broken: a non-detected use-case naming a rule that
+# exists nowhere. This is the case the 2026-09-02 widening was written to catch, and
+# it must stay fatal - what changed on 2026-09-03 is only HOW FAR the failure
+# reaches, not whether it is reported.
+id: persistence/dangling-rule-name
+title: Use-case Naming A Rule That Exists Nowhere
+rules:
+  - This Rule Does Not Exist Anywhere
+technique: T1546.003
+tactic: persistence
+safety: supervised
+expect: env_gap
+reason: fixture - env_gap says the LAB is the blocker, so the rule itself must still be enabled
+executor: caldera_command
+params:
+  shell: psh
+  command: 'Write-Host fixture-dangling'

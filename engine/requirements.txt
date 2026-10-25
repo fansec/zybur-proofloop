@@ -1,0 +1,11 @@
+# The engine's third-party imports, pinned to the versions the 2026-10-22 nightly box runs.
+# pywinrm: WinRM sessions to the Windows targets (run.py, kerberos_asreq).
+# impacket: SMB, DCE/RPC and Kerberos executors. pyasn1: imported directly by kerberos_asreq.
+# pypsrp: PowerShell remoting (psremoting, windows_reversible). PyYAML: use-case files.
+# pyasn1 is the one pin that is not the nightly box's version: 0.6.2 carries 8 OSV advisories
+# (decoder denial of service on hostile ASN.1, checked 2026-10-24) and 0.6.4 carries none.
+PyYAML==6.0.1
+impacket==0.13.0
+pypsrp==0.9.0
+pywinrm==0.4.3
+pyasn1==0.6.4

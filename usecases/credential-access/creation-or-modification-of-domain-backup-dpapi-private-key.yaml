@@ -1,0 +1,19 @@
+id: credential-access/creation-or-modification-of-domain-backup-dpapi-private-key
+title: Creation or Modification of Domain Backup DPAPI private key
+rules:
+- Creation or Modification of Domain Backup DPAPI private key
+technique: T1003
+tactic: credential-access
+severity: HIGH
+tags:
+- sample
+safety: safe
+evidence: real_behaviour
+expect: detected
+description: Create a harmless marker with the filename pattern monitored by the target rule, wait for telemetry, and remove the owned artifact with an explicit cleanup command.
+executor: winrm_command
+params:
+  platform: windows
+  shell: psh
+  command: Set-Content "$env:TEMP\ntds_capi_proofloop.pfx" "sample"; Start-Sleep 30
+cleanup: Remove-Item "$env:TEMP\ntds_capi_*.pfx" -Force -ErrorAction SilentlyContinue

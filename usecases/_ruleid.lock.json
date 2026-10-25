@@ -1,0 +1,18 @@
+{
+  "Creation or Modification of Domain Backup DPAPI private key": {
+    "rule_id": "33333333-3333-4333-8333-333333333333",
+    "rule_uuid": null
+  },
+  "Endpoint Security (Elastic Defend)": {
+    "rule_id": "22222222-2222-4222-8222-222222222222",
+    "rule_uuid": null
+  },
+  "LSASS Memory Dump Creation": {
+    "rule_id": "11111111-1111-4111-8111-111111111111",
+    "rule_uuid": null
+  },
+  "Query Registry using Built-in Tools": {
+    "rule_id": "44444444-4444-4444-8444-444444444444",
+    "rule_uuid": null
+  }
+}

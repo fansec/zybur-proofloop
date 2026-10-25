@@ -1,0 +1,13 @@
+id: impact/draft-example
+title: Draft example not yet authored
+rules: []
+technique: T1490
+tactic: impact
+safety: supervised
+evidence: stand_in
+executor: caldera_command
+status: draft
+expect: not_enabled
+params:
+  shell: psh
+  command: 'TODO: attack that triggers this rule'

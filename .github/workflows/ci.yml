@@ -1,0 +1,39 @@
+# The offline checks, on every Python the project claims (pyproject: >=3.11): a dependency audit
+# of the pinned requirements, the engine suite, lint (shape only, against the synthetic sample
+# pack) and the sanitised replay fixture. No lab, no SIEM, no secret.
+name: ci
+
+on:
+  push:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  engine:
+    runs-on: ubuntu-24.04
+    strategy:
+      fail-fast: false
+      matrix:
+        python-version: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v7
+      - uses: actions/setup-python@v7
+        with:
+          python-version: ${{ matrix.python-version }}
+      # setuptools: the engine suite includes a `pip install .` dry run with --no-build-isolation,
+      # which needs the build backend pyproject.toml names, and Python 3.12 environments ship without it.
+      - name: Install
+        run: pip install -r engine/requirements.txt "setuptools>=68"
+      - name: Audit the pinned dependencies
+        run: pip install pip-audit && pip-audit -r engine/requirements.txt
+      - name: Engine suite
+        working-directory: engine
+        run: python -m unittest discover -p 'test_*.py'
+      - name: Lint
+        working-directory: engine
+        run: python lint.py --no-resolve --export fixtures/rules_export.sample.ndjson --usecases ../usecases --lock ../usecases/_ruleid.lock.json
+      - name: Replay
+        working-directory: engine
+        run: python run.py --replay fixtures/replay/sample-night

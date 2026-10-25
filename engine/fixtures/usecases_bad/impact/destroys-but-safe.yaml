@@ -1,0 +1,13 @@
+id: impact/destroys-but-safe
+title: Destroys evidence but marked safe
+rules:
+  - Sample Rule Two
+technique: T1490
+tactic: impact
+safety: safe
+destroys_evidence: true
+executor: caldera_command
+params:
+  shell: psh
+  command: 'whoami'
+cleanup: 'Write-Host x'

@@ -1,0 +1,18 @@
+# This fixture models an installed but disabled rule, so it is absent from the enabled
+# export BY DEFINITION. Loading it must not be an error. It lives in the CLEAN
+# fixture registry on purpose - `expect: not_enabled` is a valid, lintable state,
+# not a defect, and on 2026-09-03 treating it as one crashed every run.py subcommand.
+id: persistence/wmi-subscription-not-enabled
+title: WMI Subscription Rule That Is Installed But Switched Off
+rules:
+  - Suspicious WMI Event Subscription Created
+technique: T1546.003
+tactic: persistence
+safety: supervised
+evidence: real_behaviour
+expect: not_enabled
+reason: fixture - the rule is installed and deliberately disabled, so it cannot be in the enabled export
+executor: caldera_command
+params:
+  shell: psh
+  command: 'Write-Host fixture-not-enabled'

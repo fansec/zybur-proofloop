@@ -1,0 +1,16 @@
+# The software. The nightly record as a dataset (its own DOI and version) is added by the dataset exporter.
+cff-version: 1.2.0
+message: "If you use Zybur Proofloop in research, please cite it as below."
+title: "Zybur Proofloop: nightly detection validation against a live lab"
+type: software
+version: 0.1.0
+date-released: 2026-10-22
+license: Apache-2.0
+authors:
+  - name: "Zybur"
+    website: "https://zybur.nl"
+keywords:
+  - detection engineering
+  - breach and attack simulation
+  - SIEM
+  - Elastic Security

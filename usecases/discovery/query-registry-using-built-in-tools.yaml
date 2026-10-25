@@ -1,0 +1,22 @@
+id: discovery/query-registry-using-built-in-tools
+title: Query Registry using Built-in Tools
+rules:
+- Query Registry using Built-in Tools
+technique: T1012
+tactic: discovery
+severity: LOW
+tags:
+- discovery
+- registry
+- harmless-marker
+- sample
+safety: safe
+evidence: real_behaviour
+leaves_no_artifact: true
+description: "Read the Windows ProductName registry value with reg.exe. The command changes no state and demonstrates a leaves-no-artifact safety declaration. Because the target is a new-terms rule, repeated runs may remain inconclusive until the rule's history window expires."
+executor: winrm_command
+expect: detected
+params:
+  platform: windows
+  shell: cmd
+  command: 'reg.exe query "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v ProductName && echo PROOFLOOP_REGQUERY_DONE'

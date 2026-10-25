@@ -1,0 +1,5 @@
+{
+  "credential-access/creation-or-modification-of-domain-backup-dpapi-private-key": "DETECTED",
+  "credential-access/lsass-memory-dump-creation": "PREVENTED",
+  "defense-evasion/endpoint-security-elastic-defend": "DETECTED"
+}

@@ -1,0 +1,109 @@
+{
+  "schema_version": 1,
+  "night": "2025-01-15",
+  "now": "2025-01-15T05:11:31.733954+00:00",
+  "host": {
+    "name": "ws",
+    "id": "h1",
+    "aliases": []
+  },
+  "rule_intervals": {
+    "11111111-1111-4111-8111-111111111111": "5m",
+    "22222222-2222-4222-8222-222222222222": "1m",
+    "33333333-3333-4333-8333-333333333333": "5m",
+    "neighbour-rule-1": "5m"
+  },
+  "results": [
+    {
+      "id": "credential-access/lsass-memory-dump-creation",
+      "rule_ids": [
+        "11111111-1111-4111-8111-111111111111"
+      ],
+      "executor": "caldera_command",
+      "executed": true,
+      "status": "SUCCESS",
+      "verdict": null,
+      "attack_start": "2025-01-15T04:04:14.536258+00:00",
+      "attack_end": "2025-01-15T04:04:21.096366+00:00",
+      "latency_s": null,
+      "output": "",
+      "op_id": "",
+      "expect": "detected",
+      "host": {
+        "name": "ws",
+        "id": "h1",
+        "aliases": []
+      },
+      "co_firing": [],
+      "rule_versions": {},
+      "rule_query_hashes": {},
+      "nonce": null
+    },
+    {
+      "id": "defense-evasion/endpoint-security-elastic-defend",
+      "rule_ids": [
+        "22222222-2222-4222-8222-222222222222"
+      ],
+      "executor": "windows_reversible",
+      "executed": true,
+      "status": "SUCCESS",
+      "verdict": null,
+      "attack_start": "2025-01-15T04:04:31.096649+00:00",
+      "attack_end": "2025-01-15T04:04:36.137518+00:00",
+      "latency_s": null,
+      "output": "",
+      "op_id": "",
+      "expect": "detected",
+      "host": {
+        "name": "ws",
+        "id": "h1",
+        "aliases": []
+      },
+      "co_firing": [],
+      "rule_versions": {},
+      "rule_query_hashes": {},
+      "nonce": null
+    },
+    {
+      "id": "credential-access/creation-or-modification-of-domain-backup-dpapi-private-key",
+      "rule_ids": [
+        "33333333-3333-4333-8333-333333333333"
+      ],
+      "executor": "winrm_command",
+      "executed": true,
+      "status": "SUCCESS",
+      "verdict": null,
+      "attack_start": "2025-01-15T04:05:02.942255+00:00",
+      "attack_end": "2025-01-15T04:05:33.566851+00:00",
+      "latency_s": null,
+      "output": "",
+      "op_id": "",
+      "expect": "detected",
+      "host": {
+        "name": "ws",
+        "id": "h1",
+        "aliases": []
+      },
+      "co_firing": [],
+      "rule_versions": {},
+      "rule_query_hashes": {},
+      "nonce": null
+    }
+  ],
+  "extra_starts": [
+    "2025-01-15T04:04:03.360814+00:00"
+  ],
+  "extra_ends": [
+    "2025-01-15T04:04:03.804515+00:00"
+  ],
+  "extra_detonations": [
+    {
+      "attack_start": "2025-01-15T04:04:03.360814+00:00",
+      "attack_end": "2025-01-15T04:04:03.804515+00:00",
+      "rule_ids": [
+        "neighbour-rule-1"
+      ],
+      "id": "neighbour-1"
+    }
+  ]
+}

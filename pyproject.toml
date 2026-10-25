@@ -1,0 +1,38 @@
+# Project metadata only. The engine is a flat folder of modules that import each other by name, so it
+# is not built or installed as a package: install the dependencies and run it from engine/
+#   pip install -r engine/requirements.txt && cd engine && python3 run.py --replay fixtures/replay/sample-night
+# `pip install .` works too, and installs exactly the dependencies below and no module of ours:
+# the build declaration and the empty package list exist so that it does not try to guess
+# (setuptools refuses a flat layout with two top-level folders, engine/ and usecases/).
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools]
+packages = []
+py-modules = []
+
+[project]
+name = "zybur-proofloop"
+version = "0.1.0"
+description = "Nightly detection validation: run real attack techniques on your own lab and prove which SIEM rules fired"
+readme = "README.md"
+requires-python = ">=3.11"
+license = {text = "Apache-2.0"}
+authors = [{name = "Zybur", email = "security@zybur.nl"}]
+dependencies = [
+    "PyYAML==6.0.1",
+    "impacket==0.13.0",
+    "pypsrp==0.9.0",
+    "pywinrm==0.4.3",
+    "pyasn1==0.6.4",
+]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "License :: OSI Approved :: Apache Software License",
+    "Programming Language :: Python :: 3",
+    "Topic :: Security",
+]
+
+[project.urls]
+Homepage = "https://zybur.nl"

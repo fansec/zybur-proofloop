@@ -1,0 +1,21 @@
+{
+  "_comment": "Synthetic lab registry for the engine tests: the same shape as the real one (names, roles, aliases, ids), documentation addresses (RFC 5737) and made-up ids. Pointed at through LAB_HOSTS_FILE by testenv.py. Not a lab.",
+  "hosts": [
+    {
+      "name": "production",
+      "role": "workstation",
+      "aliases": ["infected"],
+      "ip": "192.0.2.87",
+      "host_id": "00000000-0000-4000-8000-000000000001",
+      "note": "synthetic workstation"
+    },
+    {
+      "name": "dc1",
+      "role": "domain_controller",
+      "aliases": ["DC1", "DC1.lab.invalid"],
+      "ip": "192.0.2.40",
+      "host_id": "00000000-0000-4000-8000-000000000002",
+      "note": "synthetic domain controller"
+    }
+  ]
+}

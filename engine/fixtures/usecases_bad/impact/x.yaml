@@ -1,0 +1,11 @@
+id: impact/x
+title: Bad executor example
+rules:
+  - Sample Rule Two
+technique: T1490
+tactic: impact
+safety: supervised
+executor: nope
+params:
+  shell: psh
+  command: 'whoami'

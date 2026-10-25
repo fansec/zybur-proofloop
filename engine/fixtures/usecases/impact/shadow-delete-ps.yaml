@@ -1,0 +1,13 @@
+id: impact/shadow-delete-ps
+title: Sample Rule Two fixture
+rules:
+  - Sample Rule Two
+technique: T1490
+tactic: impact
+safety: safe
+evidence: real_behaviour
+cleanup: 'Write-Host fixture-cleanup'
+executor: caldera_command
+params:
+  shell: psh
+  command: 'Get-WmiObject Win32_ShadowCopy | ForEach-Object { $_.Delete() }'

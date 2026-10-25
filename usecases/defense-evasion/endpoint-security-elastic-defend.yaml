@@ -1,0 +1,19 @@
+id: defense-evasion/endpoint-security-elastic-defend
+title: Endpoint Security Elastic Defend Alert
+rules:
+- Endpoint Security (Elastic Defend)
+technique: T1036
+tactic: defense-evasion
+severity: MEDIUM
+tags:
+- endpoint
+- prevention
+- sample
+safety: safe
+evidence: stand_in
+cleanup_managed_by: windows_reversible
+description: Execute a disposable renamed system binary to exercise endpoint behaviour analytics, then remove and independently probe the owned directory.
+executor: windows_reversible
+params:
+  operation: endpoint_behavior_alert
+target: workstation

@@ -1,0 +1,21 @@
+{
+  "_comment": "Your lab registry: the only hosts Zybur Proofloop will attack. Copy to lab-hosts.json, fill in your own hosts and point LAB_HOSTS_FILE at it. role is workstation or domain_controller; the first workstation is the default target. host_id is the Elastic Agent's host.id (from an alert or Fleet), aliases are other names the host appears under in alerts. The values below are documentation addresses (RFC 5737) and made-up ids.",
+  "hosts": [
+    {
+      "name": "ws01",
+      "role": "workstation",
+      "aliases": ["WS01", "ws01.lab.example"],
+      "ip": "192.0.2.10",
+      "host_id": "00000000-0000-4000-8000-000000000010",
+      "note": "Windows 11 with Elastic Agent and Elastic Defend; WinRM over HTTP on 5985"
+    },
+    {
+      "name": "dc01",
+      "role": "domain_controller",
+      "aliases": ["DC01", "dc01.lab.example"],
+      "ip": "192.0.2.20",
+      "host_id": "00000000-0000-4000-8000-000000000020",
+      "note": "Windows Server domain controller, for the domain_controller use-cases only"
+    }
+  ]
+}

@@ -1,0 +1,19 @@
+id: credential-access/lsass-memory-dump-creation
+title: LSASS Memory Dump Creation
+rules:
+- LSASS Memory Dump Creation
+technique: T1003.001
+tactic: credential-access
+severity: HIGH
+tags:
+- cred
+- sample
+safety: safe
+evidence: real_behaviour
+description: Create an LSASS process-memory dump in the lab temporary directory, wait briefly for telemetry, and remove the owned artifact. Endpoint prevention may block the dump before the target detection rule can observe it.
+executor: caldera_command
+params:
+  platform: windows
+  shell: psh
+  command: $lsass = Get-Process lsass; $dp = "$env:TEMP\lsass_test.dmp"; rundll32.exe C:\Windows\System32\comsvcs.dll, MiniDump $($lsass.Id) $dp full; Start-Sleep -Seconds 5; if (Test-Path $dp) { Remove-Item $dp -Force; Write-Host "LSASS dump created and cleaned up" } else { Write-Host "LSASS dump blocked by EDR" }
+cleanup: if (Test-Path "$env:TEMP\lsass_test.dmp") { Remove-Item "$env:TEMP\lsass_test.dmp" -Force }

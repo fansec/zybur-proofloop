@@ -1,0 +1,11 @@
+id: impact/safe-no-cleanup
+title: Safe without cleanup
+rules:
+  - Sample Rule Two
+technique: T1490
+tactic: impact
+safety: safe
+executor: caldera_command
+params:
+  shell: psh
+  command: 'whoami'

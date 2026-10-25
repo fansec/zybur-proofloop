@@ -1,0 +1,15 @@
+# Your own rule pack: Elastic's rules carry their own licence, and the pack is your instance's.
+rules_export.ndjson
+# What a run writes: the ledger, the dedup state, the per-run results.
+/engine/state/*.jsonl
+/engine/state/.dedup_ip_state.json
+/results/
+# Credentials and environment files, wherever they are.
+.creds
+*.env
+.env
+.env.*
+# Your own lab registry (lab-hosts.example.json is the template).
+/lab-hosts.json
+__pycache__/
+*.pyc

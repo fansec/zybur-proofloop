@@ -1,0 +1,12 @@
+id: impact/pool-member-no-evidence
+title: Safe pool member missing the evidence field
+rules:
+  - Sample Rule Two
+technique: T1490
+tactic: impact
+safety: safe
+executor: caldera_command
+params:
+  shell: psh
+  command: 'whoami'
+cleanup: 'Write-Host fixture-cleanup'
