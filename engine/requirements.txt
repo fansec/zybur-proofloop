@@ -3,9 +3,10 @@
 # impacket: SMB, DCE/RPC and Kerberos executors. pyasn1: imported directly by kerberos_asreq.
 # pypsrp: PowerShell remoting (psremoting, windows_reversible). PyYAML: use-case files.
 # pyasn1 is the one pin that is not the nightly box's version: 0.6.2 carries 8 OSV advisories
-# (decoder denial of service on hostile ASN.1, checked 2026-10-24) and 0.6.4 carries none.
+# (decoder denial of service on hostile ASN.1, checked 2026-10-24), 0.6.4 carries four published
+# after that, and 0.6.5 carries none (checked 2026-11-22).
 PyYAML==6.0.1
 impacket==0.13.0
 pypsrp==0.9.0
 pywinrm==0.4.3
-pyasn1==0.6.4
+pyasn1==0.6.5

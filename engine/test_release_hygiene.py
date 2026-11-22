@@ -2,7 +2,8 @@
 
 Green since slice 8 (2026-10-24); it was pending_test_release_hygiene.py.
 
-  pyasn1==0.6.2 carries 8 OSV advisories (checked 2026-10-24); 0.6.4 carries none.
+  pyasn1==0.6.2 carries 8 OSV advisories (checked 2026-10-24); 0.6.4 carried none then and four
+  by 2026-11-22, when the pin moved to 0.6.5, which carries none.
   GOLDEN.md still says "Five-state model" and "54 tests".
   CI runs Python 3.12 only while pyproject claims >=3.11, and audits no dependency.
   `pip install .` fails: "Multiple top-level packages discovered in a flat-layout".
@@ -39,8 +40,8 @@ class Dependencies(unittest.TestCase):
         req = (HERE / "requirements.txt").read_text()
         m = re.search(r"^pyasn1==(\d+)\.(\d+)\.(\d+)$", req, re.M)
         self.assertIsNotNone(m, "pyasn1 is not pinned in requirements.txt")
-        self.assertGreaterEqual(tuple(int(x) for x in m.groups()), (0, 6, 4),
-                                "pyasn1 below 0.6.4 carries known decoder advisories")
+        self.assertGreaterEqual(tuple(int(x) for x in m.groups()), (0, 6, 5),
+                                "pyasn1 below 0.6.5 carries known advisories")
         pp = public("pyproject.toml")
         if pp is not None:
             self.assertIn(f"pyasn1=={m.group(0).split('==')[1]}", pp.read_text(),
