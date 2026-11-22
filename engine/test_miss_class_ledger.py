@@ -280,8 +280,12 @@ class TestFlappingEdges(unittest.TestCase):
 
     def test_the_stderr_summary_names_the_count(self):
         ucs = [dict(id="a", severity="LOW", safety="safe", expect="detected")]
-        rows = [self.r("a", (self.NOW - timedelta(days=3)).isoformat(), "MISSED"),
-                self.r("a", (self.NOW - timedelta(days=2)).isoformat(), "DETECTED")]
+        # runmod.main judges the rows against the real clock, so they are dated from it: rows dated from
+        # the fixed NOW age out of the flapping window and read as stale (a time bomb in the test, not
+        # in the engine).
+        now = datetime.now(timezone.utc)
+        rows = [self.r("a", (now - timedelta(days=3)).isoformat(), "MISSED"),
+                self.r("a", (now - timedelta(days=2)).isoformat(), "DETECTED")]
         err, out = io.StringIO(), io.StringIO()
         with testenv.no_lab_values(ZYBUR_ENV_ROOT=tempfile.gettempdir(), LAB_HOSTS_FILE=testenv.LAB_HOSTS_FIXTURE), \
                 mock.patch.object(runmod, "load_enabled_rules", return_value={}), \
