@@ -6,6 +6,13 @@
 [![Python 3.11+](https://img.shields.io/badge/python-3.11%2B-blue.svg)](pyproject.toml)
 [![Project status: alpha](https://img.shields.io/badge/status-alpha-orange.svg)](#project-status)
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="docs/assets/proofloop-map-dark.svg">
+    <img src="docs/assets/proofloop-map-light.svg" width="880" alt="How Zybur Proofloop works: six steps on a loop, repeated every night. Pick, attack, wait, ask, judge, record. Each run ends as detected, prevented, missed or unproven.">
+  </picture>
+</p>
+
 Zybur Proofloop executes documented attack techniques against Windows hosts in a lab you control,
 waits for each detection rule to run, and records whether the expected alert appeared. The resulting
 append-only ledger makes silent detection regressions visible before they matter during an incident.

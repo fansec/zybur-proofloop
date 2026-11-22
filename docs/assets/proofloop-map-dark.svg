@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 620" width="900" height="620" role="img" aria-labelledby="t d" font-family="Inter, -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif">
+<title id="t">How Zybur Proofloop works: one night, six steps</title>
+<desc id="d">Six steps on a loop, repeated every night. 1 Pick: untested and overdue rules go first. 2 Attack: a real technique runs on a lab machine you own. 3 Wait: until the rule has had its turn to run. 4 Ask: is the alert there, on that machine, in that window? 5 Judge: fixed rules decide, never a guess or a model. 6 Record: kept in a ledger that is only ever added to. Each run ends as detected, prevented, missed or unproven. A miss is checked again the next night.</desc>
+<rect x="0.5" y="0.5" width="899" height="619" rx="16" fill="#0d1117" stroke="#30363d"/>
+<text x="48" y="52" font-size="13" font-weight="700" letter-spacing="1.5" fill="#2dd4bf">ZYBUR PROOFLOOP</text>
+<text x="852" y="52" font-size="14" text-anchor="end" fill="#8b949e">One night, six steps</text>
+<path d="M200,230 H700 A90,90 0 0 1 700,410 H200 A90,90 0 0 1 200,230 Z" fill="#0f171b" stroke="#123f3b" stroke-width="12"/>
+<polyline points="-3.5,-5 3,0 -3.5,5" transform="translate(325,230) rotate(0)" fill="none" stroke="#2dd4bf" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-3.5,-5 3,0 -3.5,5" transform="translate(575,230) rotate(0)" fill="none" stroke="#2dd4bf" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-3.5,-5 3,0 -3.5,5" transform="translate(790,320) rotate(90)" fill="none" stroke="#2dd4bf" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-3.5,-5 3,0 -3.5,5" transform="translate(575,410) rotate(180)" fill="none" stroke="#2dd4bf" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-3.5,-5 3,0 -3.5,5" transform="translate(325,410) rotate(180)" fill="none" stroke="#2dd4bf" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<polyline points="-3.5,-5 3,0 -3.5,5" transform="translate(110,320) rotate(270)" fill="none" stroke="#2dd4bf" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+<circle cx="200" cy="230" r="24" fill="#2dd4bf" stroke="#0d1117" stroke-width="4"/>
+<text x="200" y="236.5" font-size="19" font-weight="700" text-anchor="middle" fill="#04201d">1</text>
+<text x="200" y="140" font-size="22" font-weight="700" text-anchor="middle" fill="#f0f6fc">Pick</text>
+<text x="200" y="165" font-size="15" text-anchor="middle" fill="#9da7b3">Untested and overdue</text>
+<text x="200" y="185" font-size="15" text-anchor="middle" fill="#9da7b3">rules go first</text>
+<circle cx="450" cy="230" r="24" fill="#2dd4bf" stroke="#0d1117" stroke-width="4"/>
+<text x="450" y="236.5" font-size="19" font-weight="700" text-anchor="middle" fill="#04201d">2</text>
+<text x="450" y="140" font-size="22" font-weight="700" text-anchor="middle" fill="#f0f6fc">Attack</text>
+<text x="450" y="165" font-size="15" text-anchor="middle" fill="#9da7b3">A real technique runs on</text>
+<text x="450" y="185" font-size="15" text-anchor="middle" fill="#9da7b3">a lab machine you own</text>
+<circle cx="700" cy="230" r="24" fill="#2dd4bf" stroke="#0d1117" stroke-width="4"/>
+<text x="700" y="236.5" font-size="19" font-weight="700" text-anchor="middle" fill="#04201d">3</text>
+<text x="700" y="140" font-size="22" font-weight="700" text-anchor="middle" fill="#f0f6fc">Wait</text>
+<text x="700" y="165" font-size="15" text-anchor="middle" fill="#9da7b3">Until the rule has had</text>
+<text x="700" y="185" font-size="15" text-anchor="middle" fill="#9da7b3">its turn to run</text>
+<circle cx="700" cy="410" r="24" fill="#2dd4bf" stroke="#0d1117" stroke-width="4"/>
+<text x="700" y="416.5" font-size="19" font-weight="700" text-anchor="middle" fill="#04201d">4</text>
+<text x="700" y="478" font-size="22" font-weight="700" text-anchor="middle" fill="#f0f6fc">Ask</text>
+<text x="700" y="503" font-size="15" text-anchor="middle" fill="#9da7b3">Is the alert there, on that</text>
+<text x="700" y="523" font-size="15" text-anchor="middle" fill="#9da7b3">machine, in that window?</text>
+<circle cx="450" cy="410" r="24" fill="#2dd4bf" stroke="#0d1117" stroke-width="4"/>
+<text x="450" y="416.5" font-size="19" font-weight="700" text-anchor="middle" fill="#04201d">5</text>
+<text x="450" y="478" font-size="22" font-weight="700" text-anchor="middle" fill="#f0f6fc">Judge</text>
+<text x="450" y="503" font-size="15" text-anchor="middle" fill="#9da7b3">Fixed rules decide,</text>
+<text x="450" y="523" font-size="15" text-anchor="middle" fill="#9da7b3">never a guess or a model</text>
+<circle cx="200" cy="410" r="24" fill="#2dd4bf" stroke="#0d1117" stroke-width="4"/>
+<text x="200" y="416.5" font-size="19" font-weight="700" text-anchor="middle" fill="#04201d">6</text>
+<text x="200" y="478" font-size="22" font-weight="700" text-anchor="middle" fill="#f0f6fc">Record</text>
+<text x="200" y="503" font-size="15" text-anchor="middle" fill="#9da7b3">Kept in a ledger that is</text>
+<text x="200" y="523" font-size="15" text-anchor="middle" fill="#9da7b3">only ever added to</text>
+<text x="450" y="287" font-size="12.5" font-weight="700" letter-spacing="1.6" text-anchor="middle" fill="#2dd4bf">EVERY NIGHT</text>
+<text x="450" y="319" font-size="24" font-weight="700" text-anchor="middle" fill="#f0f6fc">Did the alert really fire?</text>
+<rect x="224.5" y="337" width="106" height="28" rx="14" fill="#161b22" stroke="#30363d"/>
+<circle cx="241.5" cy="351" r="4.5" fill="#2dd4bf"/>
+<text x="253.5" y="355.6" font-size="13.5" font-weight="600" fill="#e6edf3">Detected</text>
+<rect x="340.5" y="337" width="113" height="28" rx="14" fill="#161b22" stroke="#30363d"/>
+<circle cx="357.5" cy="351" r="4.5" fill="#58a6ff"/>
+<text x="369.5" y="355.6" font-size="13.5" font-weight="600" fill="#e6edf3">Prevented</text>
+<rect x="463.5" y="337" width="93" height="28" rx="14" fill="#161b22" stroke="#30363d"/>
+<circle cx="480.5" cy="351" r="4.5" fill="#f85149"/>
+<text x="492.5" y="355.6" font-size="13.5" font-weight="600" fill="#e6edf3">Missed</text>
+<rect x="566.5" y="337" width="109" height="28" rx="14" fill="#161b22" stroke="#30363d"/>
+<circle cx="583.5" cy="351" r="4.5" fill="#8b949e"/>
+<text x="595.5" y="355.6" font-size="13.5" font-weight="600" fill="#e6edf3">Unproven</text>
+<line x1="48" y1="566" x2="852" y2="566" stroke="#21262d"/>
+<text x="450" y="595" font-size="14" text-anchor="middle" fill="#8b949e">A miss is checked again the next night. A rule that has not had its turn is pending, never missed.</text>
+</svg>
